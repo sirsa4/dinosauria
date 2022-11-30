@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 li {
@@ -140,6 +142,16 @@ ul li:nth-child(2) a{
     padding: .2em .5em;
 }
 
+.image {
+    
+}
+.image img{
+    display: block;
+    aspect-ratio: 16/9;
+    object-fit: fill;
+
+}
+
 aside{
     padding: 1rem;
     display: flex;
@@ -212,5 +224,27 @@ footer {
 
     aside article{
         width: 40%;
+    }
+    .content{
+        display: flex;
+        gap: 0 1rem;
+    }
+    .content-text > *{
+        padding: 1rem;
+    }
+    .content-text{
+        align-self: center;
+        box-shadow: 0px 1px 4px rgba(187, 39, 201, 0.4);
+        width: 50rem;
+        max-width: 50rem;
+    }
+    .content-text h2{
+        font-size: 2.5rem;
+    }
+
+    .pic img{
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: fill;
     }
 }
